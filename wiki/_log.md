@@ -1,5 +1,21 @@
 # 操作日志
 
+## 2026-07-07 — 补充采集 Karpathy 文章
+
+**采集**：[Paula 寶拉：Karpathy 筆記術教程](https://www.youtube.com/watch?v=FdSO1Yhr76I)
+  - raw 文件已存在 → 重命名为 `raw/2026-04-14-Karpathy-knowledge-base-tutorial.md`
+  - 新增 `wiki/summaries/Karpathy-knowledge-base-tutorial.md`
+  - 新增 `wiki/entities/Paula-Baola.md`
+  - 更新 `wiki/entities/Andrej-Karpathy.md`（增量）
+
+**采集**：[zhurudong/andrej-karpathy-llm-wiki](https://github.com/zhurudong/andrej-karpathy-llm-wiki)
+  - raw 文件已存在 → 重命名为 `raw/2026-02-12-karpathy-llm-wiki-template.md`
+  - 新增 `wiki/summaries/Karpathy-llm-wiki-template.md`
+  - 新增 `wiki/entities/Zhurudong.md`
+  - 新增 `wiki/concepts/LLM-Wiki.md`
+  - 新增 `wiki/concepts/RAG-vs-LLM-Wiki.md`
+  - 更新 `wiki/entities/Andrej-Karpathy.md`（增量）
+
 ## 2026-07-07 — 知识库架构改进
 
 **改进内容**：
