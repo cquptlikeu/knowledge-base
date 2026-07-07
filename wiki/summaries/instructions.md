@@ -23,7 +23,7 @@ type: summary
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 tags: [tag1, tag2]
-source: "[[raw/YYYY-MM-DD-title]]"   # 必填，链接回 raw
+source: "[[raw/casually/YYYY-MM-DD-title]]"   # 必填，链接回 raw（根据实际子文件夹）
 ---
 ```
 

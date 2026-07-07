@@ -6,10 +6,10 @@
 1. 先读取 `context/about.md` 和 `context/preferences.md` 了解用户——这是最优先的，确保 AI 知道在和谁对话
 2. 读取 `wiki/_log.md` + 最近 1~3 天的 `daily/` 文件，了解最近操作和进展，维持跨会话的连续性
 3. 如果用户有活跃项目，检查 `projects/<name>/context.md` 了解项目状态
-4. **自动检测 raw/**：扫描 `raw/` 中是否有命名不规范或未编译的新文件
+4. **自动检测 raw/**：扫描 `raw/casually/` 和 `raw/definitely/` 中是否有命名不规范或未编译的新文件
    - 符合 `YYYY-MM-DD-title.md` 规范 → 检查是否已编译（是否有对应的 `wiki/summaries/` 文件）
    - 不符合命名规范 → 读 frontmatter 推断日期和标题，自动重命名为 `YYYY-MM-DD-title.md`
-   - 发现未编译的 raw 文件 → 主动告知用户：「raw/ 中有 N 篇待处理：xxx，要我采集吗？」
+   - 发现未编译的 raw 文件 → 主动告知用户：「raw/ 中有 N 篇待处理：xxx，要我采集吗？」（注明来自 casually 还是 definitely）
 
 ## 架构
 
@@ -19,7 +19,10 @@
 │   ├── about.md              ← 你是谁、技术栈、关注方向
 │   └── preferences.md        ← 学习方式、决策风格、AI 使用习惯
 ├── raw/                     ← 原始素材（只追加，不可修改）
-│   └── YYYY-MM-DD-title.md
+│   ├── casually/            ← 随手收集的文档
+│   │   └── YYYY-MM-DD-title.md
+│   └── definitely/          ← 明确学习目标的文档
+│       └── YYYY-MM-DD-title.md
 ├── wiki/                    ← LLM 编译维护的知识层
 │   ├── summaries/           ← 每篇素材的摘要（1:1 对应 raw）
 │   ├── entities/            ← 实体：技术、工具、库、产品
@@ -110,10 +113,11 @@ synthesis ──→ 所有页面（仅出向链接，叶节点）
 
 1. **URL 采集**：用户提供 URL
    - 使用可用工具（WebFetch / curl / 浏览器 MCP 等）获取 URL 内容，保留正文、作者、发布日期
-   - 保存为 `raw/YYYY-MM-DD-<title>.md`（按规范命名）
+   - 默认保存为 `raw/definitely/YYYY-MM-DD-<title>.md`（按规范命名）
+   - 如用户说「随手存」「随便看看」→ 保存为 `raw/casually/YYYY-MM-DD-<title>.md`
    
 2. **手动放入 + 说「采集」**：用户手动把文件放进了 raw/ 或通过 Web Clipper 保存
-   - 说「采集」时先扫描 raw/ → 找出所有未编译的 raw 文件
+   - 说「采集」时先扫描 `raw/casually/` 和 `raw/definitely/` → 找出所有未编译的 raw 文件
    - 如果文件名不符合 `YYYY-MM-DD-title.md` 格式 → 读 frontmatter 推断日期和标题 → 自动重命名
    
 3. **仅手动放入（还没说采集）**：会话启动第 4 步已自动检测，不需要额外操作

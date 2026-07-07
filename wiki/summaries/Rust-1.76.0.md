@@ -3,7 +3,7 @@ type: summary
 created: 2026-07-06
 updated: 2026-07-07
 tags: [Rust, release, 1.76]
-source: "[[raw/2024-02-08-Rust-1.76.0]]"
+source: "[[raw/casually/2024-02-08-Rust-1.76.0]]"
 ---
 
 # Rust 1.76.0 发布摘要

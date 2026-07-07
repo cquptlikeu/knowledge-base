@@ -3,7 +3,7 @@ type: summary
 created: 2026-07-07
 updated: 2026-07-07
 tags: [Karpathy, 知识库, Claude Code, Obsidian, LLM Wiki]
-source: "[[raw/2026-04-14-Karpathy-knowledge-base-tutorial]]"
+source: "[[raw/casually/2026-04-14-Karpathy-knowledge-base-tutorial]]"
 ---
 
 # Karpathy LLM Wiki 方法实践教程

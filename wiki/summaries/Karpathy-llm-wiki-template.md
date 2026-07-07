@@ -3,7 +3,7 @@ type: summary
 created: 2026-07-07
 updated: 2026-07-07
 tags: [Karpathy, 知识库, CLAUDE.md, LLM Wiki, 开源]
-source: "[[raw/2026-02-12-karpathy-llm-wiki-template]]"
+source: "[[raw/casually/2026-02-12-karpathy-llm-wiki-template]]"
 ---
 
 # zhurudong/andrej-karpathy-llm-wiki：一个 CLAUDE.md 就是整个知识库
