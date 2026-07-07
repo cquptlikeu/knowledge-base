@@ -6,6 +6,7 @@
       {
         "id": "f2afc9d9f9f56535",
         "type": "tabs",
+        "dimension": 43.0956678700361,
         "children": [
           {
             "id": "c27d65683e5f7ac4",
@@ -26,6 +27,7 @@
       {
         "id": "9634b9c1e23bd587",
         "type": "tabs",
+        "dimension": 56.9043321299639,
         "children": [
           {
             "id": "5bd2b063d5516ef8",
@@ -220,12 +222,16 @@
   },
   "active": "c2b0da8e38bc45a6",
   "lastOpenFiles": [
+    "CLAUDE.md.tmp.44332.aa52c39cded5",
+    "CLAUDE.md.tmp.44332.85a0ee19e699",
+    "CLAUDE.md.tmp.44332.91b06d0e5be7",
+    "wiki/entities/Claude-Code.md",
+    "CLAUDE.md",
     "wiki/concepts/Automated-Input-Pipeline.md",
     "CLAUDE.md.tmp.44332.e7bea27a5c42",
     "wiki/concepts/ABI-Compatibility.md",
     "wiki/comparisons/Obsidian-vs-Milanote.md",
     "wiki/comparisons/instructions.md",
-    "CLAUDE.md",
     "context/preferences.md",
     "daily/2026-07-07.md",
     "raw/2024-02-08-Rust-1.76.0.md",
@@ -247,14 +253,10 @@
     "CLAUDE.md.tmp.42732.c01ab0cc4f02",
     "CLAUDE.md.tmp.42732.06c351d00fad",
     "wiki/_log.md.tmp.42732.63dcc591f318",
-    "wiki/_index.md.tmp.42732.b4f8b0cbdcfd",
-    "CLAUDE.md.tmp.42732.8275004254ba",
     "projects/instructions.md",
     "wiki/entities/instructions.md",
-    "wiki/entities/Claude-Code.md",
     "wiki/entities/Andrej-Karpathy.md",
     "wiki/concepts/Fleeting-Capture.md",
-    "wiki/concepts/Folder-as-an-APP.md",
-    "wiki/concepts/Personal-Knowledge-Asset.md"
+    "wiki/concepts/Folder-as-an-APP.md"
   ]
 }

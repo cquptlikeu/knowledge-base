@@ -3,9 +3,13 @@
 一个由 Claude Code 维护的两层 Markdown 知识库。所有内容均为纯 Markdown，可用任何编辑器打开。推荐用 Obsidian 浏览（支持 `[[wikilink]]` 和知识图谱），但 Obsidian 不是必需的。
 
 **会话启动**：每次新会话开始时，按以下顺序初始化：
-1. 先读取 `context/about.md` 和`context/preferences.md`了解用户——这是最优先的，确保 AI 知道在和谁对话
+1. 先读取 `context/about.md` 和 `context/preferences.md` 了解用户——这是最优先的，确保 AI 知道在和谁对话
 2. 读取 `wiki/_log.md` + 最近 1~3 天的 `daily/` 文件，了解最近操作和进展，维持跨会话的连续性
 3. 如果用户有活跃项目，检查 `projects/<name>/context.md` 了解项目状态
+4. **自动检测 raw/**：扫描 `raw/` 中是否有命名不规范或未编译的新文件
+   - 符合 `YYYY-MM-DD-title.md` 规范 → 检查是否已编译（是否有对应的 `wiki/summaries/` 文件）
+   - 不符合命名规范 → 读 frontmatter 推断日期和标题，自动重命名为 `YYYY-MM-DD-title.md`
+   - 发现未编译的 raw 文件 → 主动告知用户：「raw/ 中有 N 篇待处理：xxx，要我采集吗？」
 
 ## 架构
 
@@ -102,9 +106,20 @@ synthesis ──→ 所有页面（仅出向链接，叶节点）
 当你说「采集」「保存」「clip」「收藏」，或粘贴 URL 时执行。
 
 **阶段 A：获取并保存 raw**
-1. 使用可用工具（WebFetch / curl / 浏览器 MCP 等）获取 URL 内容，保留正文、作者、发布日期
-2. 保存为 `raw/YYYY-MM-DD-<title>.md`
-3. 采集前检查 `wiki/_log.md` 或已有 raw 文件的 frontmatter，确认 URL 是否已被采集过——如已采集则跳过
+
+采集方式有三种，无论哪种入口，最终都走同一个编译流程：
+
+1. **URL 采集**：用户提供 URL
+   - 使用可用工具（WebFetch / curl / 浏览器 MCP 等）获取 URL 内容，保留正文、作者、发布日期
+   - 保存为 `raw/YYYY-MM-DD-<title>.md`（按规范命名）
+   
+2. **手动放入 + 说「采集」**：用户手动把文件放进了 raw/ 或通过 Web Clipper 保存
+   - 说「采集」时先扫描 raw/ → 找出所有未编译的 raw 文件
+   - 如果文件名不符合 `YYYY-MM-DD-title.md` 格式 → 读 frontmatter 推断日期和标题 → 自动重命名
+   
+3. **仅手动放入（还没说采集）**：会话启动第 4 步已自动检测，不需要额外操作
+
+4. 采集前检查 `wiki/_log.md` 或已有 raw 文件的 frontmatter，确认 URL/内容是否已被采集过——如已采集则跳过
 
 **阶段 B：编译 wiki**
 
