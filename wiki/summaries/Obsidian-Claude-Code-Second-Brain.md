@@ -3,7 +3,7 @@ type: summary
 created: 2026-07-06
 updated: 2026-07-06
 tags: [Obsidian, Claude Code, 第二大脑, 知识管理, AI]
-source: "[[raw/你为什么立即要用Obsidian+AI搭建第二大脑？保姆级教程｜Claude Code+Obsidian]]"
+source: "[[raw/2026-04-26-obsidian-claude-code-second-brain]]"
 ---
 
 # Obsidian + Claude Code 搭建 AI 第二大脑（保姆级教程）
