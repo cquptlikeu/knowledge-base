@@ -34,7 +34,7 @@
 │       ├── decisions.md     ← 架构决策记录
 │       ├── roadblocks.md    ← 踩坑记录
 │       └── context.md       ← 项目上下文（技术栈、目标、当前阻塞）
-├── daily/                   ← 日常笔记
+├── daily/                   ← 会话记录（每次会话结束后自动写入）
 └── templates/               ← 笔记模板
 ```
 
