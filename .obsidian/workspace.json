@@ -6,7 +6,7 @@
       {
         "id": "f2afc9d9f9f56535",
         "type": "tabs",
-        "dimension": 51.44369586140519,
+        "dimension": 36.8623676612127,
         "children": [
           {
             "id": "c27d65683e5f7ac4",
@@ -27,7 +27,7 @@
       {
         "id": "6a00b62b54113aeb",
         "type": "tabs",
-        "dimension": 48.556304138594804,
+        "dimension": 63.1376323387873,
         "children": [
           {
             "id": "39fa49a2c1d816c6",
@@ -207,7 +207,20 @@
   },
   "active": "39fa49a2c1d816c6",
   "lastOpenFiles": [
+    "context/preferences.md",
+    "context/about.md",
+    "CLAUDE.md",
+    "wiki/synthesis/Two-Knowledge-Base-Approaches-Comparison.md",
+    "CLAUDE.md.tmp.38892.6c075f979504",
+    "CLAUDE.md.tmp.38892.7fb177b10538",
+    "CLAUDE.md.tmp.38892.92b6a3139d14",
+    "CLAUDE.md.tmp.38892.d7b117ec2dd4",
+    "CLAUDE.md.tmp.38892.31f8e3cf66e4",
+    "scripts/instructions.md",
+    "wiki/_log.md",
+    "wiki/_index.md",
     "daily/2026-07-08.md",
+    "daily/2026-07-07.md",
     "daily/2026-07-08.md.tmp.29436.038249b10e22",
     "wiki/comparisons/四种文件协议对比.md",
     "wiki/concepts/多协议融合.md",
@@ -215,7 +228,6 @@
     "wiki/comparisons/POSIX-ACL-vs-Unix权限.md",
     "wiki/concepts/统一权限源.md",
     "wiki/concepts/统一身份源.md",
-    "wiki/_index.md",
     "wiki/concepts/纵深防御.md",
     "wiki/summaries/NAS智能存储平台技术架构.md",
     "wiki/entities/authd.md",
@@ -228,20 +240,8 @@
     "wiki/entities/SQLite.md",
     "wiki/entities/Gin.md",
     "wiki/entities/Docker.md",
-    "wiki/entities/POSIX-ACL.md",
-    "wiki/entities/OpenLDAP.md",
-    "wiki/_log.md",
     "wiki/_log.md.tmp.29436.a62f025ad30c",
     "wiki/_index.md.tmp.29436.9d7cd7a2a0e3",
-    "wiki/_index.md.tmp.29436.8e438fe4b23c",
-    "raw/definitely/NAS智能存储平台技术架构设计说明书.md",
-    "CLAUDE.md",
-    "wiki/comparisons/POSIX-ACL-vs-Unix权限.md.tmp.29436.39a33f7ce660",
-    "wiki/comparisons/四种文件协议对比.md.tmp.29436.27dc928ff8b4",
-    "wiki/comparisons/LDAP-vs-关系数据库.md",
-    "wiki/concepts/容器化部署.md",
-    "wiki/concepts/容器化部署.md.tmp.29436.23c39579e961",
-    "wiki/concepts/国产化演进.md.tmp.29436.f111ecacd000",
-    "wiki/concepts/三级连接回退.md.tmp.29436.b5609127bd91"
+    "wiki/_index.md.tmp.29436.8e438fe4b23c"
   ]
 }
