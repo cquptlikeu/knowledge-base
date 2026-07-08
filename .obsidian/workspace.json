@@ -6,7 +6,7 @@
       {
         "id": "f2afc9d9f9f56535",
         "type": "tabs",
-        "dimension": 36.8623676612127,
+        "dimension": 38.739172281039465,
         "children": [
           {
             "id": "c27d65683e5f7ac4",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/comparisons/POSIX-ACL-vs-Unix权限.md",
+                "file": "projects/kb-link.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "POSIX-ACL-vs-Unix权限"
+              "title": "kb-link"
             }
           }
         ]
@@ -27,7 +27,7 @@
       {
         "id": "6a00b62b54113aeb",
         "type": "tabs",
-        "dimension": 63.1376323387873,
+        "dimension": 61.26082771896054,
         "children": [
           {
             "id": "39fa49a2c1d816c6",
@@ -207,9 +207,14 @@
   },
   "active": "39fa49a2c1d816c6",
   "lastOpenFiles": [
+    "projects/kb-link.md",
+    "wiki/comparisons/POSIX-ACL-vs-Unix权限.md",
+    "CLAUDE.md",
+    "projects/kb-link.md.tmp.38892.4cb19f28989d",
+    "CLAUDE.md.tmp.38892.2c7521201a5b",
+    "CLAUDE.md.tmp.38892.2af0a74b185b",
     "context/preferences.md",
     "context/about.md",
-    "CLAUDE.md",
     "wiki/synthesis/Two-Knowledge-Base-Approaches-Comparison.md",
     "CLAUDE.md.tmp.38892.6c075f979504",
     "CLAUDE.md.tmp.38892.7fb177b10538",
@@ -225,7 +230,6 @@
     "wiki/comparisons/四种文件协议对比.md",
     "wiki/concepts/多协议融合.md",
     "raw/definitely/NAS智能存储平台技术架构设计说明书.pdf",
-    "wiki/comparisons/POSIX-ACL-vs-Unix权限.md",
     "wiki/concepts/统一权限源.md",
     "wiki/concepts/统一身份源.md",
     "wiki/concepts/纵深防御.md",
@@ -238,10 +242,6 @@
     "wiki/entities/React-Native.md",
     "wiki/entities/Next.js.md",
     "wiki/entities/SQLite.md",
-    "wiki/entities/Gin.md",
-    "wiki/entities/Docker.md",
-    "wiki/_log.md.tmp.29436.a62f025ad30c",
-    "wiki/_index.md.tmp.29436.9d7cd7a2a0e3",
-    "wiki/_index.md.tmp.29436.8e438fe4b23c"
+    "wiki/entities/Gin.md"
   ]
 }
