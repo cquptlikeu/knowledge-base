@@ -6,7 +6,7 @@
       {
         "id": "f2afc9d9f9f56535",
         "type": "tabs",
-        "dimension": 38.739172281039465,
+        "dimension": 51.588065447545716,
         "children": [
           {
             "id": "c27d65683e5f7ac4",
@@ -27,7 +27,7 @@
       {
         "id": "6a00b62b54113aeb",
         "type": "tabs",
-        "dimension": 61.26082771896054,
+        "dimension": 48.411934552454284,
         "children": [
           {
             "id": "39fa49a2c1d816c6",
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/NAS_RAG/sessions.md",
+                "file": "projects/kb-link.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "sessions 的反向链接列表"
+              "title": "kb-link 的反向链接列表"
             }
           },
           {
@@ -135,12 +135,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/NAS_RAG/sessions.md",
+                "file": "projects/kb-link.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "sessions 的出链列表"
+              "title": "kb-link 的出链列表"
             }
           },
           {
@@ -178,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/NAS_RAG/sessions.md",
+                "file": "projects/kb-link.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "sessions 的大纲"
+              "title": "kb-link 的大纲"
             }
           }
         ]
@@ -205,15 +205,15 @@
       "bases:新建数据库": false
     }
   },
-  "active": "39fa49a2c1d816c6",
+  "active": "c27d65683e5f7ac4",
   "lastOpenFiles": [
+    "projects/NAS_RAG/sessions.md",
     "CLAUDE.md.tmp.38892.4aa4ffd950e0",
     "CLAUDE.md.tmp.38892.a6e69bdebae2",
     "projects/kb-link.md.tmp.38892.cd4414d52ea8",
     "projects/kb-link.md.tmp.38892.9b3262f21ad1",
     "projects/kb-link.md.tmp.38892.c7e23184ac57",
     "projects/NAS_RAG/context.md",
-    "projects/NAS_RAG/sessions.md",
     "projects/NAS_RAG/roadblocks.md",
     "projects/NAS_RAG/decisions.md",
     "daily/2026-07-08.md",
@@ -224,7 +224,6 @@
     "CLAUDE.md.tmp.38892.d713016b7574",
     "CLAUDE.md.tmp.38892.56ca392a8792",
     "CLAUDE.md.tmp.38892.ec7a4e267f99",
-    "CLAUDE.md.tmp.38892.3bc6345dfc37",
     "wiki/comparisons/POSIX-ACL-vs-Unix权限.md",
     "context/preferences.md",
     "context/about.md",
