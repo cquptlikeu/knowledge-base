@@ -14,27 +14,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/kb-link.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "kb-link"
-            }
-          }
-        ]
-      },
-      {
-        "id": "6a00b62b54113aeb",
-        "type": "tabs",
-        "dimension": 48.411934552454284,
-        "children": [
-          {
-            "id": "39fa49a2c1d816c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "projects/NAS_RAG/sessions.md",
                 "mode": "source",
                 "source": false
@@ -44,6 +23,79 @@
             }
           }
         ]
+      },
+      {
+        "id": "66be1f1b1b6efbf6",
+        "type": "split",
+        "dimension": 48.411934552454284,
+        "children": [
+          {
+            "id": "6a00b62b54113aeb",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "39fa49a2c1d816c6",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "新标签页"
+                }
+              }
+            ]
+          },
+          {
+            "id": "c486189b4f6be0cc",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "534d9dda278562f0",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "D:\\knowledge-base",
+                      "focus": false,
+                      "profile": {
+                        "args": [],
+                        "environment": [],
+                        "executable": "C:\\Windows\\System32\\cmd.exe",
+                        "followTheme": true,
+                        "name": "",
+                        "platforms": {
+                          "win32": true
+                        },
+                        "pythonExecutable": "python3",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "integrated",
+                        "useWin32Conhost": true
+                      },
+                      "profileSourceId": "win32IntegratedDefault",
+                      "serial": null,
+                      "userTitle": ""
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal",
+                  "title": "终端：C:\\Windows\\System32\\conhost.exe"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -116,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/kb-link.md",
+                "file": "projects/NAS_RAG/sessions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +178,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "kb-link 的反向链接列表"
+              "title": "sessions 的反向链接列表"
             }
           },
           {
@@ -135,12 +187,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/kb-link.md",
+                "file": "projects/NAS_RAG/sessions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "kb-link 的出链列表"
+              "title": "sessions 的出链列表"
             }
           },
           {
@@ -178,13 +230,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/kb-link.md",
+                "file": "projects/NAS_RAG/sessions.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "kb-link 的大纲"
+              "title": "sessions 的大纲"
             }
           }
         ]
@@ -202,28 +254,30 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "c27d65683e5f7ac4",
+  "active": "534d9dda278562f0",
   "lastOpenFiles": [
     "projects/NAS_RAG/sessions.md",
+    "projects/kb-link.md",
+    "projects/instructions.md",
+    "projects/NAS_RAG/decisions.md",
+    "projects/NAS_RAG/context.md",
+    "projects/NAS_RAG/roadblocks.md",
+    "daily/2026-07-08.md.tmp.43576.fa0ddb5a0b59",
+    "projects/NAS_RAG/roadblocks.md.tmp.43576.285e606fd660",
+    "projects/NAS_RAG/decisions.md.tmp.43576.bf530cff60c9",
+    "projects/NAS_RAG/context.md.tmp.43576.8a0918086d3b",
+    "projects/NAS_RAG/sessions.md.tmp.43576.98cd87e2ceed",
+    "projects/NAS_RAG/context.md.tmp.43576.569595934894",
+    "projects/NAS_RAG",
     "CLAUDE.md.tmp.38892.4aa4ffd950e0",
     "CLAUDE.md.tmp.38892.a6e69bdebae2",
     "projects/kb-link.md.tmp.38892.cd4414d52ea8",
-    "projects/kb-link.md.tmp.38892.9b3262f21ad1",
-    "projects/kb-link.md.tmp.38892.c7e23184ac57",
-    "projects/NAS_RAG/context.md",
-    "projects/NAS_RAG/roadblocks.md",
-    "projects/NAS_RAG/decisions.md",
     "daily/2026-07-08.md",
-    "projects/NAS_RAG",
-    "projects/kb-link.md",
-    "daily/2026-07-08.md.tmp.38892.bff78a02cc29",
     "CLAUDE.md",
-    "CLAUDE.md.tmp.38892.d713016b7574",
-    "CLAUDE.md.tmp.38892.56ca392a8792",
-    "CLAUDE.md.tmp.38892.ec7a4e267f99",
     "wiki/comparisons/POSIX-ACL-vs-Unix权限.md",
     "context/preferences.md",
     "context/about.md",

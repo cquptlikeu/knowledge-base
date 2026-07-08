@@ -1,36 +1,30 @@
+# 会话记录
+
 ## 最近会话（最近 5 条，完整保留）
 
-### 2026-07-08 深夜 — S1.1 数据合同与不变量落地
-- 做了什么：在 `src/nas_rag/corpus/` 下建立 manifest/errors 正式数据合同模型（models.py / errors.py / validators.py），写契约测试 15 passed；补 tests 包 `__init__.py` 消除同名模块收集冲突
-- 什么决定：合同层锁死 text=null（photo/video/media）、epoch 成对、坏文件保留、synthetic 披露、video 不得带 location、media 不得有 text
-- 什么还没做完：S1.2 10–20 文件 dry-run 还没开始
-
-### 2026-07-08 晚间 — S1 启动前多 Agent 建议
-- 做了什么：用 4 视角工作流（产品边界 / 架构风险 / 评估诚信 / 执行顺序）产出 S1 readiness council，共识为 ready_with_caveats
-- 什么决定：S1 必须先锁合同再 dry-run 再全量；S1 只交付 manifest/errors，不交付检索效果结论
-- 什么还没做完：转为起草并冻结 docs/stages/S1.md
-
-### 2026-06-28 下午 — S0.4 锁版收尾 + S0.3 提交
-- 做了什么：导出 environment.lock.yml / requirements.lock.txt；搭 verify_repro 骨架；README 复现说明；S0.3 提交（评估核心 TDD 落地）
-- 什么决定：S0 整体 DoD 闭合，进入 S1；git 边界已更正为"嵌套独立仓库"（CLAUDE.md §0/§12 + S0.md）
-- 什么还没做完：S1 阶段文档 + 实现
-
-### 2026-06-28 上午/中午 — S0.3 评估核心 TDD
-- 做了什么：TDD 写出 domain/models + match + eval/metrics + capability + ground_truth + attribution；67 passed
-- 什么决定：拍板四条口径——semantic=子串包含 AND、time=created_epoch、precision 分母=min(k,len)、文件名粘连保留整体 q3
-- 什么还没做完：锁版 + verify_repro 骨架
-
-### 2026-06-27 下午 — S0.1/S0.2 骨架 + 冒烟门禁
-- 做了什么：conda env 建立 + 目录骨架 + config 单一真源；核心依赖冒烟门禁；OCR 选定 RapidOCR
-- 什么决定：跳过 PaddleOCR（numpy-2 降级风险）、RapidOCR(onnxruntime) 装包最稳；environment.yml 去 defaults 只留 conda-forge
-- 什么还没做完：S0.3 评估核心 TDD
+### 2026-07-08 晚间 — S0 全阶段完成(S0.1~S0.4)+ S1.1 数据合同落地
+- **做了什么**
+  - S0.1：conda 环境(修 environment.yml 去 defaults 只留 conda-forge)+ 仓库骨架 + config 单一真源(settings/type_labels/capability_matrix,矩阵对齐 AD-5)+ pytest 骨架冒烟 → 4 passed
+  - S0.2：核心依赖冒烟门禁(tests/test_smoke_imports.py,22 passed)+ OCR 回退链选定 rapidocr-onnxruntime(跳过 Paddle 以避 numpy-2 降级)→ 26 passed
+  - S0.3：评估核心 TDD 落地——不可变领域模型 + match(epoch 半开/NFC/分词/q3保留整体)/capability(子集判定)/metrics(recall-precision-ndcg-mrr)/ground_truth(created_epoch 统一)/attribution(归因四分支),pytest 67 passed → 补 review 后修补 ground_truth 契约收窄至 FileRecord + 补 modified_epoch 反例 + NFC 集成测试
+  - S0.4：锁版(environment.lock.yml + requirements.lock.txt)+ verify_repro 骨架 + README 复现说明 + run_snapshot schema 占位 → 70 passed
+  - S0 阶段全部提交并推送
+  - 多 Agent S1 readiness council：结论 ready_with_caveats,先锁合同再 dry-run
+  - 起草并冻结 docs/stages/S1.md(5 个子阶段、S1 只交付 manifest/errors,不交付检索效果)
+  - S1.1：新增 corpus/models.py(manifest 合同)/errors.py(errors 合同)/validators.py(不变量校验),tests/corpus 15 passed,全量 85 passed
+  - 修正 CLAUDE.md git 边界表述(NAS_RAG 是嵌套独立仓库,非 agent-learning 子目录/submodule)
+  - 修正 README status("待建"→"S0.1 已建")
+  - 修 environment.yml 去 defaults 防清华镜像超时
+  - 新增 rapidocr-onnxruntime 到 environment.yml
+- **什么决定**
+  - semantic GT 匹配=子串包含(NFC+casefold, AND)
+  - time 统一 created_epoch,photo 的 captured_epoch 在 S1 物化期对齐
+  - precision@k 分母=min(k, len(ranked))
+  - 文件名字母数字粘连保留整体 q3,剥离扩展名再分词
+  - attribution 不保留 matrix 形参(YAGNI)
+  - environment.yml 加 rapidocr-onnxruntime 而非留到 lock 文件(遵循 S1 边界)
+  - S1 必须先做 dry-run(10-20 小样本)再扩全量
+- **什么还没做完**
+  - S1.1 已提交;S1.2(10-20 文件 dry-run)待开展
 
 ---
-
-## 历史摘要（按月压缩）
-
-### 2026-06 月汇总
-- 关键决策：semantic GT 匹配=子串包含（非分词）、time=created_epoch 单字段、precision 分母=min(k,len)、文件名字母数字粘连保留整体 q3
-- 重要里程碑：S0 完整闭合（环境→骨架→冒烟门禁→评估核心 TDD→锁版）+ S1.1 数据合同落地
-- 架构决策：RapidOCR 当选（弃 PaddleOCR 因 numpy 降级风险）、git 边界更正（NAS_RAG 为嵌套独立仓库）、manifest/errors 合同与不变量锁死
-- 踩坑：清华镜像 `pkgs/free` 已弃用导致 conda env create 超时（修复：去 defaults + 只用 conda-forge）；tests/corpus 与 tests/domain 同名 test_models.py 冲突（修复：clean __pycache__ + 补 __init__.py）
