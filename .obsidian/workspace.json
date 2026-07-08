@@ -207,6 +207,8 @@
   },
   "active": "39fa49a2c1d816c6",
   "lastOpenFiles": [
+    "daily/2026-07-08.md",
+    "daily/2026-07-08.md.tmp.29436.038249b10e22",
     "wiki/comparisons/四种文件协议对比.md",
     "wiki/concepts/多协议融合.md",
     "raw/definitely/NAS智能存储平台技术架构设计说明书.pdf",
@@ -239,9 +241,7 @@
     "wiki/comparisons/LDAP-vs-关系数据库.md",
     "wiki/concepts/容器化部署.md",
     "wiki/concepts/容器化部署.md.tmp.29436.23c39579e961",
-    "wiki/concepts/国产化演进.md",
     "wiki/concepts/国产化演进.md.tmp.29436.f111ecacd000",
-    "wiki/concepts/三级连接回退.md.tmp.29436.b5609127bd91",
-    "wiki/concepts/RAG-三层混合检索.md.tmp.29436.a86aa5179582"
+    "wiki/concepts/三级连接回退.md.tmp.29436.b5609127bd91"
   ]
 }
