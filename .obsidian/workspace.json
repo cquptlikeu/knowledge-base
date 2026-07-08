@@ -35,12 +35,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "daily/2026-07-08.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLAUDE"
+              "title": "2026-07-08"
             }
           }
         ]
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "daily/2026-07-08.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "CLAUDE 的反向链接列表"
+              "title": "2026-07-08 的反向链接列表"
             }
           },
           {
@@ -135,12 +135,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "daily/2026-07-08.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "CLAUDE 的出链列表"
+              "title": "2026-07-08 的出链列表"
             }
           },
           {
@@ -178,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "daily/2026-07-08.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "CLAUDE 的大纲"
+              "title": "2026-07-08 的大纲"
             }
           }
         ]
@@ -207,14 +207,15 @@
   },
   "active": "39fa49a2c1d816c6",
   "lastOpenFiles": [
+    "projects/kb-link.md",
+    "daily/2026-07-08.md.tmp.38892.bff78a02cc29",
+    "CLAUDE.md",
     "CLAUDE.md.tmp.38892.d713016b7574",
     "CLAUDE.md.tmp.38892.56ca392a8792",
     "CLAUDE.md.tmp.38892.ec7a4e267f99",
     "CLAUDE.md.tmp.38892.3bc6345dfc37",
     "projects/kb-link.md.tmp.38892.d23061f012bb",
-    "projects/kb-link.md",
     "wiki/comparisons/POSIX-ACL-vs-Unix权限.md",
-    "CLAUDE.md",
     "projects/kb-link.md.tmp.38892.4cb19f28989d",
     "CLAUDE.md.tmp.38892.2c7521201a5b",
     "CLAUDE.md.tmp.38892.2af0a74b185b",
@@ -222,8 +223,6 @@
     "context/about.md",
     "wiki/synthesis/Two-Knowledge-Base-Approaches-Comparison.md",
     "CLAUDE.md.tmp.38892.6c075f979504",
-    "CLAUDE.md.tmp.38892.7fb177b10538",
-    "CLAUDE.md.tmp.38892.92b6a3139d14",
     "scripts/instructions.md",
     "wiki/_log.md",
     "wiki/_index.md",
