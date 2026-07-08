@@ -207,11 +207,16 @@
   },
   "active": "39fa49a2c1d816c6",
   "lastOpenFiles": [
+    "CLAUDE.md.tmp.38892.4aa4ffd950e0",
+    "CLAUDE.md.tmp.38892.a6e69bdebae2",
+    "projects/kb-link.md.tmp.38892.cd4414d52ea8",
+    "projects/kb-link.md.tmp.38892.9b3262f21ad1",
+    "projects/kb-link.md.tmp.38892.c7e23184ac57",
+    "projects/NAS_RAG/context.md",
+    "projects/NAS_RAG/sessions.md",
     "projects/NAS_RAG/roadblocks.md",
     "projects/NAS_RAG/decisions.md",
-    "projects/NAS_RAG/context.md",
     "daily/2026-07-08.md",
-    "projects/NAS_RAG/sessions.md",
     "projects/NAS_RAG",
     "projects/kb-link.md",
     "daily/2026-07-08.md.tmp.38892.bff78a02cc29",
@@ -220,11 +225,7 @@
     "CLAUDE.md.tmp.38892.56ca392a8792",
     "CLAUDE.md.tmp.38892.ec7a4e267f99",
     "CLAUDE.md.tmp.38892.3bc6345dfc37",
-    "projects/kb-link.md.tmp.38892.d23061f012bb",
     "wiki/comparisons/POSIX-ACL-vs-Unix权限.md",
-    "projects/kb-link.md.tmp.38892.4cb19f28989d",
-    "CLAUDE.md.tmp.38892.2c7521201a5b",
-    "CLAUDE.md.tmp.38892.2af0a74b185b",
     "context/preferences.md",
     "context/about.md",
     "wiki/synthesis/Two-Knowledge-Base-Approaches-Comparison.md",
@@ -241,7 +242,6 @@
     "wiki/entities/authd.md",
     "wiki/entities/mDNS.md",
     "wiki/entities/SHA-256.md",
-    "wiki/entities/PUF.md",
-    "wiki/entities/NFC.md"
+    "wiki/entities/PUF.md"
   ]
 }
