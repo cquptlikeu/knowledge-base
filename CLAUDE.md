@@ -37,6 +37,8 @@
 │       ├── decisions.md     ← 架构决策记录
 │       ├── roadblocks.md    ← 踩坑记录
 │       └── context.md       ← 项目上下文（技术栈、目标、当前阻塞）
+│   ├── scripts/                 ← 工具脚本
+│   │   └── convert-to-markdown.py  ← PDF/DOCX/DOC → Markdown 转换
 ├── daily/                   ← 会话记录（每次会话结束后自动写入）
 ```
 
@@ -119,10 +121,20 @@ synthesis ──→ 所有页面（仅出向链接，叶节点）
 2. **手动放入 + 说「采集」**：用户手动把文件放进了 raw/ 或通过 Web Clipper 保存
    - 说「采集」时先扫描 `raw/casually/` 和 `raw/definitely/` → 找出所有未编译的 raw 文件
    - 如果文件名不符合 `YYYY-MM-DD-title.md` 格式 → 读 frontmatter 推断日期和标题 → 自动重命名
+   - **非 Markdown 文件自动转换**：发现 `.pdf` / `.docx` / `.doc` 文件 → 自动运行 `scripts/convert-to-markdown.py` 转为 `.md`，转换后的 .md 文件原地存放，原始文件不移除（raw 不可变原则）
    
 3. **仅手动放入（还没说采集）**：会话启动第 4 步已自动检测，不需要额外操作
 
 4. 采集前检查 `wiki/_log.md` 或已有 raw 文件的 frontmatter，确认 URL/内容是否已被采集过——如已采集则跳过
+
+5. **支持的文件格式**：
+   | 格式 | 文字 | 图片/图表 | 处理方式 |
+   |------|:---:|:---:|---------|
+   | `.md` | ✅ | ❌ | 直接使用。内嵌 `![](path)` 图片无法被 Read 读取 |
+   | `.pdf` | ✅ | ✅ | **不转换**——Read 工具渲染 PDF 页面画面，图表/公式/截图所见即所得 |
+   | `.docx` | ✅ | ❌ | `convert-to-markdown.py` 提取文字+表格。嵌入图片可提取到 assets/ 供你在 Obsidian 查看，但 AI 无法读取 |
+   | `.doc` | ✅ | ❌ | LibreOffice 转 .docx 后同上 |
+   | `.png/.jpg` | — | ❌ | Read 工具无法读取独立图片文件。如需采集，改为截图贴进 PDF 或直接描述图片内容 |
 
 **阶段 B：编译 wiki**
 

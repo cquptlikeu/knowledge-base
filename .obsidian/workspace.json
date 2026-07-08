@@ -6,7 +6,7 @@
       {
         "id": "f2afc9d9f9f56535",
         "type": "tabs",
-        "dimension": 43.0956678700361,
+        "dimension": 51.44369586140519,
         "children": [
           {
             "id": "c27d65683e5f7ac4",
@@ -14,23 +14,23 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/_log.md",
+                "file": "wiki/comparisons/POSIX-ACL-vs-Unix权限.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_log"
+              "title": "POSIX-ACL-vs-Unix权限"
             }
           }
         ]
       },
       {
-        "id": "9634b9c1e23bd587",
+        "id": "6a00b62b54113aeb",
         "type": "tabs",
-        "dimension": 56.9043321299639,
+        "dimension": 48.556304138594804,
         "children": [
           {
-            "id": "5bd2b063d5516ef8",
+            "id": "39fa49a2c1d816c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -41,20 +41,6 @@
               },
               "icon": "lucide-file",
               "title": "CLAUDE"
-            }
-          },
-          {
-            "id": "c2b0da8e38bc45a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "raw/instructions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "instructions"
             }
           }
         ]
@@ -114,7 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 437.5
   },
   "right": {
     "id": "af0a18d551c8a641",
@@ -219,43 +205,43 @@
       "bases:新建数据库": false
     }
   },
-  "active": "5bd2b063d5516ef8",
+  "active": "39fa49a2c1d816c6",
   "lastOpenFiles": [
-    "wiki/summaries/instructions.md.tmp.38428.b0eead70e799",
-    "raw/instructions.md.tmp.38428.610ef1c4eee3",
-    "CLAUDE.md.tmp.38428.90e8229c0958",
-    "sedaku7Ha",
-    "sedALYrEa",
-    "sedGehmpf",
-    "CLAUDE.md.tmp.38428.81310242822b",
-    "CLAUDE.md.tmp.38428.6c2ad2d8443b",
-    "CLAUDE.md.tmp.38428.e90149f78dab",
-    "wiki/summaries/Karpathy-llm-wiki-template.md.tmp.38428.c2160d9463ec",
-    "wiki/summaries/Karpathy-knowledge-base-tutorial.md.tmp.38428.9a5d21b295f9",
-    "raw/casually/2026-04-26-obsidian-claude-code-second-brain.md",
-    "raw/casually/2026-02-12-karpathy-llm-wiki-template.md",
-    "raw/casually/2026-04-14-Karpathy-knowledge-base-tutorial.md",
-    "raw/casually/2024-02-08-Rust-1.76.0.md",
-    "daily/2026-07-07.md",
-    "CLAUDE.md",
-    "wiki/synthesis/Two-Knowledge-Base-Approaches-Comparison.md",
+    "wiki/comparisons/四种文件协议对比.md",
+    "wiki/concepts/多协议融合.md",
+    "raw/definitely/NAS智能存储平台技术架构设计说明书.pdf",
+    "wiki/comparisons/POSIX-ACL-vs-Unix权限.md",
+    "wiki/concepts/统一权限源.md",
+    "wiki/concepts/统一身份源.md",
+    "wiki/_index.md",
+    "wiki/concepts/纵深防御.md",
+    "wiki/summaries/NAS智能存储平台技术架构.md",
+    "wiki/entities/authd.md",
+    "wiki/entities/mDNS.md",
+    "wiki/entities/SHA-256.md",
+    "wiki/entities/PUF.md",
+    "wiki/entities/NFC.md",
+    "wiki/entities/React-Native.md",
+    "wiki/entities/Next.js.md",
+    "wiki/entities/SQLite.md",
+    "wiki/entities/Gin.md",
+    "wiki/entities/Docker.md",
+    "wiki/entities/POSIX-ACL.md",
+    "wiki/entities/OpenLDAP.md",
     "wiki/_log.md",
-    "wiki/summaries/Obsidian-Claude-Code-Second-Brain.md",
-    "context/preferences.md",
-    "raw/instructions.md",
-    "raw/你为什么立即要用Obsidian+AI搭建第二大脑？保姆级教程｜Claude Code+Obsidian.md",
-    "raw/2026-04-26-obsidian-claude-code-second-brain.md",
-    "raw/2026-04-14-Karpathy-knowledge-base-tutorial.md",
-    "wiki/concepts/RAG-vs-LLM-Wiki.md",
-    "wiki/concepts/LLM-Wiki.md",
-    "wiki/entities/Paula-Baola.md",
-    "wiki/entities/Zhurudong.md",
-    "wiki/summaries/Karpathy-llm-wiki-template.md",
-    "wiki/summaries/Karpathy-knowledge-base-tutorial.md",
-    "raw/2026-02-12-karpathy-llm-wiki-template.md",
-    "raw/矽谷大神 Karpathy 筆記術！十分鐘學會如何用 Claude Code 建立個人知識庫.md",
-    "raw/2024-02-08-Rust-1.76.0.md",
-    "raw/zhurudongandrej-karpathy-llm-wiki A minimal CLAUDE.md template that turns any LLM CLI into a personal knowledge base. Drop in one file, start ingesting articles. Karpathy's LLM Wiki pattern.md",
-    "wiki/entities/Claude-Code.md"
+    "wiki/_log.md.tmp.29436.a62f025ad30c",
+    "wiki/_index.md.tmp.29436.9d7cd7a2a0e3",
+    "wiki/_index.md.tmp.29436.8e438fe4b23c",
+    "raw/definitely/NAS智能存储平台技术架构设计说明书.md",
+    "CLAUDE.md",
+    "wiki/comparisons/POSIX-ACL-vs-Unix权限.md.tmp.29436.39a33f7ce660",
+    "wiki/comparisons/四种文件协议对比.md.tmp.29436.27dc928ff8b4",
+    "wiki/comparisons/LDAP-vs-关系数据库.md",
+    "wiki/concepts/容器化部署.md",
+    "wiki/concepts/容器化部署.md.tmp.29436.23c39579e961",
+    "wiki/concepts/国产化演进.md",
+    "wiki/concepts/国产化演进.md.tmp.29436.f111ecacd000",
+    "wiki/concepts/三级连接回退.md.tmp.29436.b5609127bd91",
+    "wiki/concepts/RAG-三层混合检索.md.tmp.29436.a86aa5179582"
   ]
 }

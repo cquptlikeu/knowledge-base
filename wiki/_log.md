@@ -1,5 +1,30 @@
 # 操作日志
 
+## 2026-07-07 — 采集 NAS 智能存储平台技术架构
+
+**采集**：`raw/definitely/NAS智能存储平台技术架构设计说明书.pdf`（56 页，V1.1）
+  - PDF 通过 pdfplumber 提取文字，转为 `raw/definitely/NAS智能存储平台技术架构设计说明书.md`
+  - 新增 `wiki/summaries/NAS智能存储平台技术架构.md`
+
+**新增实体（20 个）**：
+  - `entities/OpenLDAP.md`、`entities/POSIX-ACL.md`、`entities/authd.md`
+  - `entities/MCP.md`、`entities/RAG.md`、`entities/Docker.md`
+  - `entities/Go.md`、`entities/Gin.md`、`entities/Samba.md`、`entities/NFS.md`
+  - `entities/WebDAV.md`、`entities/JWT.md`、`entities/SQLite.md`
+  - `entities/PUF.md`、`entities/SHA-256.md`、`entities/Nginx.md`
+  - `entities/mDNS.md`、`entities/WiFi-P2P.md`、`entities/Next.js.md`、`entities/React-Native.md`、`entities/NFC.md`
+
+**新增概念（10 个）**：
+  - `concepts/统一身份源.md`、`concepts/统一权限源.md`、`concepts/哈希链可信存证.md`
+  - `concepts/Agent-Loop.md`、`concepts/多协议融合.md`、`concepts/纵深防御.md`
+  - `concepts/RAG-三层混合检索.md`、`concepts/三级连接回退.md`
+  - `concepts/国产化演进.md`、`concepts/容器化部署.md`
+
+**新增对比（3 个）**：
+  - `comparisons/LDAP-vs-关系数据库.md`、`comparisons/四种文件协议对比.md`、`comparisons/POSIX-ACL-vs-Unix权限.md`
+
+**更新**：`wiki/_index.md`（新增 NAS 智能存储平台架构主题，更新全部页面列表）
+
 ## 2026-07-07 — 补充采集 Karpathy 文章
 
 **采集**：[Paula 寶拉：Karpathy 筆記術教程](https://www.youtube.com/watch?v=FdSO1Yhr76I)
