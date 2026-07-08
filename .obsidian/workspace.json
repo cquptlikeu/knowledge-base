@@ -207,6 +207,11 @@
   },
   "active": "39fa49a2c1d816c6",
   "lastOpenFiles": [
+    "CLAUDE.md.tmp.38892.d713016b7574",
+    "CLAUDE.md.tmp.38892.56ca392a8792",
+    "CLAUDE.md.tmp.38892.ec7a4e267f99",
+    "CLAUDE.md.tmp.38892.3bc6345dfc37",
+    "projects/kb-link.md.tmp.38892.d23061f012bb",
     "projects/kb-link.md",
     "wiki/comparisons/POSIX-ACL-vs-Unix权限.md",
     "CLAUDE.md",
@@ -219,17 +224,13 @@
     "CLAUDE.md.tmp.38892.6c075f979504",
     "CLAUDE.md.tmp.38892.7fb177b10538",
     "CLAUDE.md.tmp.38892.92b6a3139d14",
-    "CLAUDE.md.tmp.38892.d7b117ec2dd4",
-    "CLAUDE.md.tmp.38892.31f8e3cf66e4",
     "scripts/instructions.md",
     "wiki/_log.md",
     "wiki/_index.md",
     "daily/2026-07-08.md",
     "daily/2026-07-07.md",
-    "daily/2026-07-08.md.tmp.29436.038249b10e22",
     "wiki/comparisons/四种文件协议对比.md",
     "wiki/concepts/多协议融合.md",
-    "raw/definitely/NAS智能存储平台技术架构设计说明书.pdf",
     "wiki/concepts/统一权限源.md",
     "wiki/concepts/统一身份源.md",
     "wiki/concepts/纵深防御.md",
@@ -241,7 +242,6 @@
     "wiki/entities/NFC.md",
     "wiki/entities/React-Native.md",
     "wiki/entities/Next.js.md",
-    "wiki/entities/SQLite.md",
-    "wiki/entities/Gin.md"
+    "wiki/entities/SQLite.md"
   ]
 }
