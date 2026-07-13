@@ -40,7 +40,7 @@
 │       ├── decisions.md     ← 架构决策记录
 │       └── roadblocks.md    ← 踩坑记录
 │   ├── scripts/                 ← 工具脚本
-│   │   └── convert-to-markdown.py  ← PDF/DOCX/DOC → Markdown 转换
+│   │   └── convert-to-markdown.py  ← DOCX/DOC → Markdown 转换
 ├── daily/                   ← 会话记录（每次会话结束后自动写入）
 ```
 
@@ -69,6 +69,7 @@
 ### 文件命名
 
 - raw 文件：`YYYY-MM-DD-<title>.md`，特殊字符替换为 `-`，标题截断到 80 字符
+- raw 重命名只在文件进入编译流程前发生。一旦 raw 文件被 summary 引用或写入 `_log.md`，即视为事实层已接收，不再重命名、不修改内容。
 - wiki 页面：以主题命名（如 `Kubernetes.md`, `Server Actions.md`）
 - comparisons：`A vs B.md`
 - synthesis：以回答主题命名，不是以问题命名
@@ -123,7 +124,8 @@ synthesis ──→ 所有页面（仅出向链接，叶节点）
 2. **手动放入 + 说「采集」**：用户手动把文件放进了 raw/ 或通过 Web Clipper 保存
    - 说「采集」时先扫描 `raw/casually/` 和 `raw/definitely/` → 找出所有未编译的 raw 文件
    - 如果文件名不符合 `YYYY-MM-DD-title.md` 格式 → 读 frontmatter 推断日期和标题 → 自动重命名
-   - **非 Markdown 文件自动转换**：发现 `.pdf` / `.docx` / `.doc` 文件 → 自动运行 `scripts/convert-to-markdown.py` 转为 `.md`，转换后的 .md 文件原地存放，原始文件不移除（raw 不可变原则）
+   - **非 Markdown 文件自动转换**：发现 `.docx` / `.doc` 文件 → 自动运行 `scripts/convert-to-markdown.py` 转为 `.md`，转换后的 .md 文件原地存放，原始文件不移除（raw 不可变原则）
+   - **PDF 不转换**：`.pdf` 原件就是事实层，使用 Read 工具渲染页面画面读取，避免丢失图表、公式、截图和排版信息
    
 3. **仅手动放入（还没说采集）**：会话启动第 4 步已自动检测，不需要额外操作
 
@@ -134,9 +136,11 @@ synthesis ──→ 所有页面（仅出向链接，叶节点）
    |------|:---:|:---:|---------|
    | `.md` | ✅ | ❌ | 直接使用。内嵌 `![](path)` 图片无法被 Read 读取 |
    | `.pdf` | ✅ | ✅ | **不转换**——Read 工具渲染 PDF 页面画面，图表/公式/截图所见即所得 |
-   | `.docx` | ✅ | ❌ | `convert-to-markdown.py` 提取文字+表格。嵌入图片可提取到 assets/ 供你在 Obsidian 查看，但 AI 无法读取 |
-   | `.doc` | ✅ | ❌ | LibreOffice 转 .docx 后同上 |
+   | `.docx` | ✅ | ✅ | `convert-to-markdown.py` 提取文字+表格，并完整保留嵌入图片到 assets/ |
+   | `.doc` | ✅ | ✅ | LibreOffice 转 .docx 后同上 |
    | `.png/.jpg` | — | ❌ | Read 工具无法读取独立图片文件。如需采集，改为截图贴进 PDF 或直接描述图片内容 |
+
+   **历史特例**：`raw/definitely/NAS智能存储平台技术架构设计说明书.pdf` 和同名 `.md` 是同一文档的两种形式。`.pdf` 是事实层原件，`.md` 是 2026-07-07 生成的历史文字提取稿，只作为检索/摘要辅助，不作为独立来源重复编译。
 
 **阶段 B：编译 wiki**
 
@@ -189,6 +193,14 @@ synthesis ──→ 所有页面（仅出向链接，叶节点）
 ### 3. Audit（审计）
 
 当你说「审查」「检查知识库」「健康检查」时执行。
+
+**审计风险排序**：先处理会损坏事实层或导致执行错误的问题，再处理版本管理和同步问题，再处理链接/索引/frontmatter 一致性，最后才处理 overview 等知识网络丰富度优化。每发现一条规则矛盾，必须追问：如果最机械的执行者照这条规则做，最坏会损坏什么？
+
+**证据来源标注**：审计中的所有数量判断必须标注来源。
+- `[测量]`：写明所用命令和结果
+- `[用户提供]`：标明“据用户提供”
+- `[未测量]`：写“未可靠测量”，并给出建议运行的确认命令
+- `[测量失败]`：写明检查未能完成的原因，不把失败结果当结论
 
 **第一步：结构扫描**
 1. **死链**：grep 所有 `[[...]]` 链接，检查目标文件是否存在

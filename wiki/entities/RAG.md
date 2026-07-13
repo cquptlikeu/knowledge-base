@@ -1,7 +1,7 @@
 ---
 type: entity
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-13
 tags: [AI, 检索增强生成, 知识库, 向量检索]
 aliases: [Retrieval-Augmented Generation, 检索增强生成, RAG流水线]
 ---
@@ -26,7 +26,7 @@ aliases: [Retrieval-Augmented Generation, 检索增强生成, RAG流水线]
 
 - **配合 [[entities/MCP]]**：MCP 负责工具调用规范，RAG 负责内容检索流水线
 - **配合 [[concepts/Agent-Loop]]**：RAG 流水线在 Agent 的工具调用循环中执行
-- **配合 [[concepts/RAG-vs-LLM-Wiki]]**：不同知识管理范式的对比
+- **配合 [[concepts/AI-Project-Differentiation]]**：RAG 项目的差异化是 2026 年求职中的关键议题
 
 ## 三层混合检索策略
 
@@ -36,6 +36,11 @@ aliases: [Retrieval-Augmented Generation, 检索增强生成, RAG流水线]
 2. **Layer 2 — 内容混合检索**（低成本）：SQLite FTS5 全文检索 + bge-m3 语义向量检索，两路融合排序
 3. **Layer 3 — VLM 按需处理**（高成本兜底）：图片/PDF 多模态理解，仅在前两层无法满足时触发
 
+- **vs [[entities/LangChain]] + [[entities/Chroma]]**：这两者的组合加上 OpenAI API 是 2026 年应届生简历中最常见的模板项目，已构成同质化陷阱。从基础 RAG 到多模态 RAG + 垂直场景落地是避免同质化的关键升级路径。
+
 ## 来源
 
 - [[summaries/NAS智能存储平台技术架构]] — 第 4.7 节、第 9 章
+- [[summaries/AI项目避坑与加分项指南]] — 基础 RAG 的坑 vs 多模态 RAG 的升级路径
+- [[summaries/AI项目差异化方法论]] — RAG 作为「标准答案」案例被分析
+- [[summaries/面试官视角的AI时代筛选逻辑]] — 同质化项目在面试中的困境
