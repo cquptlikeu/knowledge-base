@@ -42,7 +42,7 @@
 
 **关键实体**：[[entities/LangGraph]]（图结构多 Agent 编排）、[[entities/AutoGen]]（对话式多 Agent 编排）、[[entities/LangChain]]（LLM 应用框架，同质化陷阱）、[[entities/Chroma]]（向量数据库，教程标配）、[[entities/Llama]]（本地化部署大模型）、[[entities/Qwen2]]（端侧推理模型）
 
-**相关文章**：[[summaries/面试官视角的AI时代筛选逻辑]]、[[summaries/AI项目避坑与加分项指南]]、[[summaries/AI项目差异化方法论]]、[[summaries/Agent项目的三个落地方向]]
+**相关文章**：[[summaries/面试官视角的AI时代筛选逻辑]]、[[summaries/AI项目避坑与加分项指南]]、[[summaries/AI项目差异化方法论]]、[[summaries/Agent项目的三个落地方向]]、[[summaries/AI-Agent工程师学习路线2026]]、[[summaries/Agent学习路线七层递进]]、[[summaries/Agent赛道四大岗位精准对标]]、[[summaries/AI-Agent技术学习清单从入门到offer]]、[如何让儿童主动使用产品：竞品留存机制与游戏化设计深度调研报告](https://mcn6b41gta92.feishu.cn/wiki/CF7Qw1x4viq2a2kENbZcpJe2nde) (飞书外部文档)
 
 ## 主题：Rust
 
@@ -63,6 +63,10 @@
 - [[summaries/AI项目避坑与加分项指南]] — 三个巨坑 + 四个加分项目
 - [[summaries/AI项目差异化方法论]] — 找到属于你的差异化方向
 - [[summaries/Agent项目的三个落地方向]] — 自动化/多Agent协作/记忆助手
+- [[summaries/AI-Agent工程师学习路线2026]] — 先搞懂Agent会在哪里坏，再学框架
+- [[summaries/Agent学习路线七层递进]] — 后端转Agent七层指南（含RAG深度论述）
+- [[summaries/Agent赛道四大岗位精准对标]] — Agent赛道4大岗位方向拆解（应用/研发/方案/Infra）
+- [[summaries/AI-Agent技术学习清单从入门到offer]] — 便携技术清单（6层+3月路线+面试题）
 - [[summaries/Obsidian-Claude-Code-Second-Brain]]
 - [[summaries/Karpathy-knowledge-base-tutorial]]
 - [[summaries/Karpathy-llm-wiki-template]]
@@ -138,3 +142,4 @@
 
 ### Synthesis
 - [[synthesis/Two-Knowledge-Base-Approaches-Comparison]]
+- [[synthesis/NAS家庭教育智能体-黄老师四次问答梳理]] — NAS 家庭教育智能体的产品定位、技术架构、冷启动策略完整梳理

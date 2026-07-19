@@ -27,7 +27,7 @@ aliases: [AutoGen框架]
 
 - **vs [[entities/LangGraph]]**：AutoGen 用对话编排（灵活但不可预测），LangGraph 用图结构编排（可控但需要显式设计）
 - **配合 [[entities/MCP]]**：Agent 可通过 MCP 协议调用外部工具
-- **配合 [[concepts/Multi-Agent Collaboration]]**：多 Agent 协作范式的两种实现路径之一
+- **配合 [[concepts/Multi-Agent-Collaboration]]**：多 Agent 协作范式的两种实现路径之一
 
 ## 来源
 

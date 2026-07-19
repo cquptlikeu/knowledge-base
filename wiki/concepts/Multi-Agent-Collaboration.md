@@ -51,8 +51,8 @@ aliases: [Multi-Agent System, 多Agent协作, 多智能体系统]
 ## 相关概念对比
 
 - **vs [[concepts/Agent-Loop]]**：Agent-Loop 是单个 Agent 的推理循环，Multi-Agent 是多 Agent 的协作编排——后者通常由多个 Agent-Loop 组成
-- **配合 [[concepts/Agent Execution Environment]]**：多 Agent 并发运行时，执行环境的隔离、资源调度、失败兜底是核心工程难点
-- **配合 [[concepts/AI Project Differentiation]]**：「我用了多 Agent 协同」无信息量；「我在多 Agent 协同中遇到了 X 问题，用 Y 方案解决」才有差异化
+- **配合 [[concepts/Agent-Execution-Environment]]**：多 Agent 并发运行时，执行环境的隔离、资源调度、失败兜底是核心工程难点
+- **配合 [[concepts/AI-Project-Differentiation]]**：「我用了多 Agent 协同」无信息量；「我在多 Agent 协同中遇到了 X 问题，用 Y 方案解决」才有差异化
 
 ## 来源
 

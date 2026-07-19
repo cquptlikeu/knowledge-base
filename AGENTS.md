@@ -1,8 +1,8 @@
 # 个人知识库
 
-> **你是 Claude Code。** 此文件与 `AGENTS.md` 内容等价——如果你已经读过 `AGENTS.md`，直接跳到「会话启动」开始执行，不需要重复阅读。
+> **你是 Antigravity。** 此文件与 `CLAUDE.md` 内容等价——如果你已经读过 `CLAUDE.md`，直接跳到「会话启动」开始执行，不需要重复阅读。
 
-一个由 Claude Code 维护的两层 Markdown 知识库。所有内容均为纯 Markdown，可用任何编辑器打开。推荐用 Obsidian 浏览（支持 `[[wikilink]]` 和知识图谱），但 Obsidian 不是必需的。
+一个由 Antigravity 维护的两层 Markdown 知识库。所有内容均为纯 Markdown，可用任何编辑器打开。推荐用 Obsidian 浏览（支持 `[[wikilink]]` 和知识图谱），但 Obsidian 不是必需的。
 
 **会话启动**：每次新会话开始时，按以下顺序初始化：
 1. 先读取 `context/about.md` 和 `context/preferences.md` 了解用户——这是最优先的，确保 AI 知道在和谁对话
@@ -44,8 +44,8 @@
 ├── scripts/                 ← 工具脚本
 │   └── convert-to-markdown.py  ← DOCX/DOC → Markdown 转换
 ├── daily/                   ← 会话记录（每次会话结束后自动写入）
-├── CLAUDE.md                ← Claude Code 规则入口
-└── AGENTS.md                ← Antigravity 规则入口（与 CLAUDE.md 等价）
+├── AGENTS.md                ← Antigravity 规则入口
+└── CLAUDE.md                ← Claude Code 规则入口（与 AGENTS.md 等价）
 ```
 
 ### 为什么两层
@@ -224,9 +224,9 @@ synthesis ──→ 所有页面（仅出向链接，叶节点）
 
 ## 项目联动
 
-项目相关的所有规则（上下文读取、会话记录、决策踩坑、每日记录、Git 同步）统一放在 `projects/kb-link.md`。无论是从 KB 目录还是从项目目录启动，Claude 都应读取该文件并按规则执行。
+项目相关的所有规则（上下文读取、会话记录、决策踩坑、每日记录、Git 同步）统一放在 `projects/kb-link.md`。无论是从 KB 目录还是从项目目录启动，Antigravity 都应读取该文件并按规则执行。
 
-在项目目录的 CLAUDE.md 中加一行即可接入：
+在项目目录的 AGENTS.md 中加一行即可接入：
 
 ```markdown
 ## 知识库联动

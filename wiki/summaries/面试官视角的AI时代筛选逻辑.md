@@ -70,5 +70,5 @@ source: "[[raw/casually/2026-07-13-面试官视角的AI时代筛选逻辑]]"
 
 - [[entities/MCP]] — 文章提及的协议
 - [[concepts/Agent-Loop]] — Agent 推理循环与执行环境
-- [[concepts/Agent Execution Environment]] — 执行层隔离与兜底（新概念）
-- [[concepts/AI Project Differentiation]] — 面试筛选中的差异化价值（新概念）
+- [[concepts/Agent-Execution-Environment]] — 执行层隔离与兜底（新概念）
+- [[concepts/AI-Project-Differentiation]] — 面试筛选中的差异化价值（新概念）

@@ -34,8 +34,8 @@ Meta（Facebook）开源的 LLM 系列模型。Llama 3（8B/70B/405B）是目前
 ## 与其他实体的关系
 
 - **竞争对手 [[entities/Qwen2]]**：同为开源模型，Qwen2 在中文和端侧场景有优势
-- **配合 [[entities/Ollama]]**：最简便的本地部署工具链
-- **配合 [[concepts/Agent Execution Environment]]**：本地部署中执行环境的选择与管理
+- **配合 Ollama**：最简便的本地部署工具链（来自 llama.cpp 生态，一键本地运行开源模型）
+- **配合 [[concepts/Agent-Execution-Environment]]**：本地部署中执行环境的选择与管理
 
 ## 来源
 

@@ -53,6 +53,6 @@ source: "[[raw/casually/2026-07-13-Agent项目的三个落地方向]]"
 
 - [[entities/LangGraph]] — 多 Agent 协作框架
 - [[entities/AutoGen]] — 微软多 Agent 框架
-- [[concepts/Multi-Agent Collaboration]] — 多 Agent 协作架构（新）
-- [[concepts/Agent Memory]] — Agent 长期记忆系统（新）
-- [[concepts/AI Project Differentiation]] — 项目差异化策略
+- [[concepts/Multi-Agent-Collaboration]] — 多 Agent 协作架构（新）
+- [[concepts/Agent-Memory]] — Agent 长期记忆系统（新）
+- [[concepts/AI-Project-Differentiation]] — 项目差异化策略

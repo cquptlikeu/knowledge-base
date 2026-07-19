@@ -31,8 +31,8 @@ aliases: [Qwen2.5, Qwen, 通义千问]
 ## 与其他实体的关系
 
 - **竞争对手 [[entities/Llama]]**：同为开源模型，Qwen2 在中文和端侧场景更强
-- **配合 [[concepts/Agent Execution Environment]]**：端侧推理环境的管理
-- **配合 [[concepts/Agent Memory]]**：端侧日程管理需要本地长期记忆
+- **配合 [[concepts/Agent-Execution-Environment]]**：端侧推理环境的管理
+- **配合 [[concepts/Agent-Memory]]**：端侧日程管理需要本地长期记忆
 
 ## 来源
 

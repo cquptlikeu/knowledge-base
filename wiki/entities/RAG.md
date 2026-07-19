@@ -44,3 +44,4 @@ aliases: [Retrieval-Augmented Generation, 检索增强生成, RAG流水线]
 - [[summaries/AI项目避坑与加分项指南]] — 基础 RAG 的坑 vs 多模态 RAG 的升级路径
 - [[summaries/AI项目差异化方法论]] — RAG 作为「标准答案」案例被分析
 - [[summaries/面试官视角的AI时代筛选逻辑]] — 同质化项目在面试中的困境
+- [[summaries/Agent学习路线七层递进]] — 从后端视角论证 RAG 为何是必学技术：两大致命缺陷（数据滞后+幻觉）→ RAG 是最优解

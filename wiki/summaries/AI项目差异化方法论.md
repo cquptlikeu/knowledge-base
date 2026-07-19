@@ -61,7 +61,6 @@ AI + 你熟悉的一个垂直领域 = 差异化项目。
 
 ## 相关实体与概念
 
-- [[concepts/AI Project Differentiation]] — 差异化方法论（新）
-- [[concepts/Minimum Viable AI Product]] — 最小可用 AI 产品（新）
+- [[concepts/AI-Project-Differentiation]] — 差异化方法论（新）
 - [[entities/RAG]] — 作为反面案例被提及（标准答案的同质化陷阱）
 - [[entities/LangChain]] — 被提及为教程标配框架
