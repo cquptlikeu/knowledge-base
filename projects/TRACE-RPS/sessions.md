@@ -2,6 +2,11 @@
 
 ## 最近会话（最近 5 条，完整保留）
 
+### 2026-07-22 下午 — TRACE 内部机制改进建议分层分析
+- 做了什么：对照当前 `anonymization/trace.py`、`anonymization/evidence.py` 与 P1 配置，核实现有方法实际是“最后一层、平均所有头、问题末 token 对评论 token 的 raw attention”；结合 Contrastive Attribution、AttnLRP、Activation Patching、Probe/Concept Erasure 与 Privacy Neuron 文献，将建议拆成目标对齐、机制定位、因果验证、威胁模型、系统角色和实验设计六个角度
+- 什么决定：将建议理解为一条递进证据链，而非并列替代算法——目标 logit 定义解释对象，AttnLRP 筛选候选路径，Top-K patching 验证局部因果；同模型白盒解释保证内部归属，跨家族 attacker/judge 保证外部有效性
+- 什么还没做完：未修改代码或启动实验；若继续实施，需先确定目标属性的多 token 序列分数、反事实 donor 构造和 A0-A3 单变量消融协议
+
 ### 2026-07-22 下午 — TRACE 论文笔记整理与事实校正
 - 做了什么：读取飞书原文“论文笔记”，在同级知识空间创建“TRACE-RPS 论文与代码笔记（整理版）”；对照上游 TRACE-RPS 实现、当前 `road_A` 代码与 P1 配置，将内容重组为 9 章、5 张表，并保留原画板导出图和两张截图
 - 什么决定：把“原作者模型搭配错误”收敛为“角色耦合的泛化风险”；明确 Qwen2.5 独立改写器尚未实现；把 P7 结论限定为“覆盖率提升但单组 DeepSeek-v4-pro 实验未见显著隐私收益”；澄清前 6 条截断不等于证据全局丢失
@@ -25,13 +30,6 @@
   - McNemar p=0.043/0.016/0.043 跨三个指标，3-way 整体 p=0.012
   - road_A 显著优于 vanilla
 - 验证结论写入 memory/p7-coverage-vs-privacy.md、memory/p1-closure-roadA-vs-vanilla.md
-
-### 2026-06-23~24 — P7 实现完毕 + P6 0.15 gate 验证
-- P7 证据覆盖率提升——6 项改动：fuzzy filter + attention fallback + interleave merge + attacker evidence + max_anonymization_targets + 评估改进
-- 241+72 tests passed
-- P6 验证：0.15 语义门处于 dormant 状态（min seen 0.219 > 0.15），安全网就位但从未触发
-- 模型部署：Qwen2.5-7B + Llama-3.1-8B → autodl，新建 conda env `road_A_eval`（transformers 4.44.2）
-- 发现并修复 inference.py 入口误导——关键发现：inference.py 不运行 TRACE，正确入口是 `PYTHONPATH=. python anonymization/trace.py`
 
 ---
 
