@@ -2,6 +2,11 @@
 
 ## 最近会话（最近 5 条，完整保留）
 
+### 2026-07-22 下午 — TRACE 论文笔记整理与事实校正
+- 做了什么：读取飞书原文“论文笔记”，在同级知识空间创建“TRACE-RPS 论文与代码笔记（整理版）”；对照上游 TRACE-RPS 实现、当前 `road_A` 代码与 P1 配置，将内容重组为 9 章、5 张表，并保留原画板导出图和两张截图
+- 什么决定：把“原作者模型搭配错误”收敛为“角色耦合的泛化风险”；明确 Qwen2.5 独立改写器尚未实现；把 P7 结论限定为“覆盖率提升但单组 DeepSeek-v4-pro 实验未见显著隐私收益”；澄清前 6 条截断不等于证据全局丢失
+- 什么还没做完：证据反事实验证、改写器角色解耦与 P7 跨家族复测仍待后续实验
+
 ### 2026-07-10 深夜 — P1 闭合指南审计修复 + 验证完毕
 - 多 Agent 审计 P1 闭合指南 v2，发现 8 处确认问题（F2 prompt 混淆、F4 无闭合标准、F7 可选停止、F9 B 行歧义、F10 新循环偏倚、M14 断链、A2 歧义），全部修复
 - 验证所有 h2/h3 编号连续、4 个锚点链接有效
@@ -27,12 +32,6 @@
 - P6 验证：0.15 语义门处于 dormant 状态（min seen 0.219 > 0.15），安全网就位但从未触发
 - 模型部署：Qwen2.5-7B + Llama-3.1-8B → autodl，新建 conda env `road_A_eval`（transformers 4.44.2）
 - 发现并修复 inference.py 入口误导——关键发现：inference.py 不运行 TRACE，正确入口是 `PYTHONPATH=. python anonymization/trace.py`
-
-### 2026-06-22~23 — P6 语义效用门 + 实验框架搭建
-- 实现 P6：all-MiniLM-L6-v2 cosine similarity gate（阈值 0.15），处决匿名化后语义差异过大的替代文本
-- 修正 project-env-and-run memory——正确三阶段入口：defense → attack → evaluation
-- 修正 trace_concurrent.py 忽略 trace_config 的文档
-- 补充 A1/A3 消融臂定义到 memory
 
 ---
 
