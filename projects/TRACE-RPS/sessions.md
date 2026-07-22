@@ -3,9 +3,9 @@
 ## 最近会话（最近 5 条，完整保留）
 
 ### 2026-07-22 下午 — TRACE 内部机制改进建议分层分析
-- 做了什么：对照当前 `anonymization/trace.py`、`anonymization/evidence.py` 与 P1 配置，核实现有方法实际是“最后一层、平均所有头、问题末 token 对评论 token 的 raw attention”；结合 Contrastive Attribution、AttnLRP、Activation Patching、Probe/Concept Erasure 与 Privacy Neuron 文献，将建议拆成目标对齐、机制定位、因果验证、威胁模型、系统角色和实验设计六个角度
-- 什么决定：将建议理解为一条递进证据链，而非并列替代算法——目标 logit 定义解释对象，AttnLRP 筛选候选路径，Top-K patching 验证局部因果；同模型白盒解释保证内部归属，跨家族 attacker/judge 保证外部有效性
-- 什么还没做完：未修改代码或启动实验；若继续实施，需先确定目标属性的多 token 序列分数、反事实 donor 构造和 A0-A3 单变量消融协议
+- 做了什么：对照当前 `anonymization/trace.py`、`anonymization/evidence.py` 与 P1 配置，核实现有方法实际是“最后一层、平均所有头、问题末 token 对评论 token 的 raw attention”；结合 Contrastive Attribution、AttnLRP、Activation Patching、Probe/Concept Erasure 与 Privacy Neuron 文献，将建议拆成目标对齐、机制定位、因果验证、威胁模型、系统角色和实验设计六个角度；进一步完成方案一“目标 Logit 对比归因”的数学定义、代码落点、TDD 测试、分阶段实验和验收指标蓝图
+- 什么决定：将建议理解为一条递进证据链，而非并列替代算法——目标 logit 定义解释对象，AttnLRP 筛选候选路径，Top-K patching 验证局部因果；方案一使用完整候选序列的 log-prob margin，不用单个 next-token logit；先以 oracle Gradient×Input 做 shadow 上界实验，再做 IG 和完全不读取 `target_label` 的 predicted-target 模式；同模型白盒解释保证内部归属，跨家族 attacker/judge 保证外部有效性
+- 什么还没做完：未修改代码或启动实验；实施前仍需冻结 checkpoint、prompt、候选 verbalizer、长度归一化和验收阈值，并确定反事实 donor 构造与 A0-A3 单变量消融协议
 
 ### 2026-07-22 下午 — TRACE 论文笔记整理与事实校正
 - 做了什么：读取飞书原文“论文笔记”，在同级知识空间创建“TRACE-RPS 论文与代码笔记（整理版）”；对照上游 TRACE-RPS 实现、当前 `road_A` 代码与 P1 配置，将内容重组为 9 章、5 张表，并保留原画板导出图和两张截图
